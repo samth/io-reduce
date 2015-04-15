@@ -272,6 +272,5 @@
 
 (provide io-tests)
 
-(module+ test
-  (require rackunit/text-ui rackunit)
-  (run-tests    test:make-filter-input-port))
+(require rackunit/text-ui)
+(run-tests    test:make-filter-input-port)
