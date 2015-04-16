@@ -25,7 +25,7 @@
   (make-input-port #f
                    (lambda (buffer)
                      (define r (read-bytes-avail!* buffer pipe-input))
-                     (printf "read: ~a ~a ~a\n" r (file-position file-in) (file-position filter-in))
+                     ;(printf "read: ~a ~a ~a\n" r (file-position file-in) (file-position filter-in))
                      r)
                    #f
                    (lambda () (close-input-port pipe-input)
